@@ -1,4 +1,4 @@
-import { Food } from "./components/food"
+import { Card } from "./components/card"
 import { Footer } from "./components/footer"
 import { Header } from "./components/header"
 
@@ -6,7 +6,14 @@ function App() {
   return (
     <div>
       <Header />
-      <Food />
+
+      <div className="card-holder">
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+      </div>
+
       <Footer />
     </div>
   )
