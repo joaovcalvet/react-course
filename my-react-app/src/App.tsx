@@ -1,7 +1,6 @@
-import { Card } from "./components/card"
 import { Footer } from "./components/footer"
 import { Header } from "./components/header"
-import { ExternalButtonStyle, InlineButtonStyle, ModuleButtonStyle } from "./components/style-component";
+import { Student } from "./components/student/component";
 
 function App() {
     return (
@@ -9,15 +8,12 @@ function App() {
         <Header />
 
         <div className="card-holder">
-            <Card />
-            <Card />
-            <Card />
-            <Card />
+            <Student name="João Victor Calvet" age={21} isStudent={true} course="Sistemas de Informação" />
+            <Student name="Anderson Ferreira Calvet" age={47} isStudent={false} />
+            <Student name="Patricia Affonso" age={44} isStudent={false} />
+            <Student age={16} isStudent={true} course="Técnico em Informática" />
         </div>
 
-        <InlineButtonStyle />
-        <ModuleButtonStyle />
-        <ExternalButtonStyle />
         <Footer />
     </div>
     );
