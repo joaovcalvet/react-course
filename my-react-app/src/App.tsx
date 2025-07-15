@@ -1,12 +1,12 @@
 import { Footer } from "./components/footer";
 import { Header } from "./components/header";
-import { HookUseEffect } from "./components/hooks/component";
+import { ColorPicker } from "./components/colorPicker";
 
 function App() {
     return (
     <div>
         <Header />
-        <HookUseEffect />
+        <ColorPicker />
         <Footer />
     </div>
     );
